@@ -2,37 +2,67 @@
 <html>
 	<head>
 		<title>My Portfolio</title>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 
 	<body>
-		<header>
-			<h1>~/ portfolio/index.html</h1>
+
+		<header>	
+			<nav class="main-nav">
+				<a href="index.html">Home</a>
+				<a href="#about">About me</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#education">Education</a>
+				<a href="#education">Experience</a>
+				<a href="#certificates">Certificates</a>
+				<a href="#contact">Contact me</a>
+			</nav>
+
+			<nav class="data-nav">
+				 <div class="language-nav">
+			        <a class="ru-nav" href="pages/ru/index.html">RU</a>
+			        <p>/</p>
+			        <a class="en-nav active" href="index.html">EN</a>
+			    </div>
+
+				<p>Fri Jun 21 18:38:00 UTC 2024</p>
+			</nav>
 		</header>
-		<nav>
-			<a href="index.html">Home</a>
-			<a href="#about">About me</a>
-			<a href="#skills">Skills</a>
-			<a href="#projects">Projects</a>
-			<a href="#education">Education</a>
-			<a href="#education">Experience</a>
-			<a href="#certificates">Certificates</a>
-			<a href="#contact">Contact</a>
-		</nav>
+
+		<h1>~/portfolio/en/index.html</h1>
 
 		<main>
-			<section>
-				<h2>Hello, I am Alexander</h2>
-
-					<p>I am an Information Security student</p>
-					<a href="#projects">View my projects</a>
-					<a href="#contact">Contact me</a>
+			<section class="hello-main">
+				<h2 class="alexander-main">Alexander</h2>
+					<p class="security-main">Information Security</p>
+					<div class="hello-links">
+						<a href="#projects">View my projects</a>
+						<a href="#contact">Contact me</a>
+					</div>
 			</section>
 
-			<section>
-				<h2 id="about">02. About me</h2>
-					<p>Hi, my name is Alexander and this is my portfolio.<br> 
-					I have been studying in the <em>INTC college</em> and I am looking for a <strong>job</strong>.</p>
-					<a href="pages/MoreAboutMe.html">More about me</a>
+			<section class="about-main">
+				<h2><a href="pages/en/MoreAboutMe.html">About me</a></h2>
+					<div class="about-row">
+						<span class="about-label">WHO I AM</span>
+						<span class="about-text">— student, Linux user</span>
+					</div>
+
+					<div class="about-row">
+						<span class="about-label">MUSIC</span>
+						<span class="about-text">— 123</span>
+					</div>
+
+					<div class="about-row">
+						<span class="about-label">BOOKS</span>
+						<span class="about-text">— 123</span>
+					</div>
+
+					<div class="about-row">
+						<span class="about-label">MOVIES &amp; SERIES</span>
+						<span class="about-text">— 123</span>
+					</div>
 			</section>
 		</main>
 
