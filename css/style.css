@@ -130,13 +130,21 @@ main {
 	margin: 0;
 	padding-left: 15px;
 	padding-top: 20px;
+	margin-bottom: -11px;
 }
 
 .security-main {
 	color: #CDCBC3;
 	font-size: 30px;
 	margin: 0;
-	padding-left: 15px;
+	padding-left: 40px;
+}
+
+.alittle-main {
+	font-size: 18px;
+	padding-left: 70px;
+	padding-right: 700px;
+	margin-top: 0px;
 }
 
 .hello-links {
@@ -170,26 +178,45 @@ main {
 	font-family: "IBM Plex Mono", "Liberation Mono", monospace;
 }
 
+.about-main::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -110px;
+  width: 1px;
+  height: 535px;
+  background: #686868;
+}
+
+.about-main {
+	width: 700px;
+	padding: 0 25px 0 15px;
+	height: 250px;
+	position: relative;
+	padding-bottom: 100px;
+	font-size: 20px;
+}
+
 .about-main h2 {
 	display: flex;
     align-items: center;
-    width: 700px;
+    width: 100%;
     min-height: 41px;
     padding: 0;
     border-bottom: 1px solid #686868;
-	margin: 0px;
-	margin-top: 40px;
-	font-size: 18px;
+	margin: 5px;
+	margin-top: 50px;
+	font-size: 20px;
 }
 
 .about-row {
     display: flex;
     align-items: center;
-    width: 700px;
+    width: 100%;
     min-height: 41px;
     padding: 0;
     border-bottom: 1px solid #686868;
-	border-right: 1px solid #686868;
+	margin: 5px;
 }
 
 .about-label {

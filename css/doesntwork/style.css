@@ -1,0 +1,9 @@
+html {
+    font-size: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+	color: red;
+}
