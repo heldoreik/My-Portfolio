@@ -2,234 +2,164 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: min(1vw, 1.7778vh);
+}
+
 a {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
+    transition: 120ms;
 }
 
+body {
+    margin: 0;
+    color: #CDCBC3;
+    background-color: #1B1D1C;
+    font-family: "IBM Plex Mono", "Liberation Mono", monospace;
+    height: 100rem;
+    width: 100rem;
+    overflow: hidden;
+}
+
+/* header */
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 20px;
-	color: #CDCBC3;
-	background-color: #2D2D2D;
-	font-size: 17px;
-	font-family: "IBM Plex Mono", "Liberation Mono", monospace;
-	font-weight: 500;
-	text-align: left;
-	width: 1890px;
-	height: 30px;
-	padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D2D2D;
+    font-size: 1.2rem;
+    font-weight: 500;
+    min-height: 1.7rem;
+    padding: 0 1rem;
+    width: 99.5vw;
 }
 
-
+/* nav */
 .main-nav {
-	display: flex;
-	gap: 0px;
+    display: flex;
 }
-
 .main-nav a {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	color: #CDCBC3;
-	text-decoration: none;
-	transition: 120ms;
-}
-
-.main-nav a:nth-child(1) { width: 60px; }  
-.main-nav a:nth-child(2) { width: 100px; } 
-.main-nav a:nth-child(3) { width: 70px; }  
-.main-nav a:nth-child(4) { width: 90px; }  
-.main-nav a:nth-child(5) { width: 105px; } 
-.main-nav a:nth-child(6) { width: 115px; } 
-.main-nav a:nth-child(7) { width: 130px; } 
-.main-nav a:nth-child(8) { width: 105px; }
-
-.main-nav a:hover {
-	background-color: #818175;
-	color: #1B1D1C;
-}
-
-.data-nav {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	gap: 20px;
-	transition: 120ms;
-}
-
-.language-nav {
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: center;
+    padding: 0 1rem;
 }
-
+.main-nav a:hover {
+    background-color: #818175;
+    color: #1B1D1C;
+}
+.data-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
 .data-nav p {
     margin: 0;
 }
 
+/* language-nav */
+.language-nav {
+    display: flex;
+    gap: 0.3rem;
+}
 .ru-nav,
 .en-nav {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 30px;
-    transition: 120ms;
+    display: flex;
+    justify-content: center;
+    width: 1.7rem;
 }
-
 .ru-nav:hover,
 .en-nav:hover {
-	display: flex;
-	justify-content: center;
     background-color: #818175;
     color: #1B1D1C;
-	width: 30px;
 }
-
 .ru-nav.active,
 .en-nav.active {
-	display: flex;
-	justify-content: center;
     background-color: #818175;
     color: #1B1D1C;
-	width: 30px;
-
 }
 
 h1 {
-	color: #1B1D1C;
-	background-color: #818175;
-	font-size: 17px;
-	font-family: "IBM Plex Mono", "Liberation Mono", monospace;
-	width: 1350px;
-	padding-left: 20px;
-	margin-bottom: 0;
+    color: #1B1D1C;
+    background-color: #d7cf9d;
+    font-size: 1rem;
+    padding-left: 1rem;
+    width: 100rem;
+    max-width: 78.1rem;
+    margin-bottom: 0;
 }
 
 main {
-	gap: 20px;
-	color: #CDCBC3;
-	font-size: 17px;
-	font-family: "IBM Plex Mono", "Liberation Mono", monospace;
-	font-weight: 500;
-	text-align: left;
-	padding-left: 20px;
-	border-bottom: 2px solid #818175;
-	border-left: 2px solid #818175;
-	border-right: 2px solid #818175;
-	width: 1350px;
-	height: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-bottom: 0.2rem solid #d7cf9d;
+    border-left: 0.2rem solid #d7cf9d;
+    border-right: 0.2rem solid #d7cf9d;
+    width: 100rem;
+    max-width: 78.1rem;
+    height: 35rem;
+    margin-top: 0;
+    padding-top: 1rem;
 }
 
 .alexander-main {
-	color: #CDCBC3;
-	font-size: 40px;
-	font-family: "IBM Plex Mono", "Liberation Mono", monospace;
-	margin: 0;
-	padding-left: 15px;
-	padding-top: 20px;
-	margin-bottom: -11px;
+    font-size: 3rem;
+    margin: 0;
+    padding-left: 1rem;
+    margin-bottom: -0.5rem;
 }
 
 .security-main {
-	color: #CDCBC3;
-	font-size: 30px;
-	margin: 0;
-	padding-left: 40px;
+    font-size: 2rem;
+    margin: 0;
+    padding-left: 3rem;
 }
 
 .alittle-main {
-	font-size: 18px;
-	padding-left: 70px;
-	padding-right: 700px;
-	margin-top: 0px;
-}
-
-.hello-links {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    padding-left: 10px;
-}
-
-.hello-links a {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 150px;
-    transition: 120ms;
-    font-size: 17px;
-    font-family: "IBM Plex Mono", "Liberation Mono", monospace;
-}
-
-.hello-links a:hover {
-    background-color: #818175;
-    color: #1B1D1C;
-}
-
-.hello-links a:nth-child(1) { width: 160px; } 
-.hello-links a:nth-child(2) { width: 105px; }
-
-.about-main {
-	color: #d7cf9d;
-	padding-left: 15px;
-	font-family: "IBM Plex Mono", "Liberation Mono", monospace;
-}
-
-.about-main::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -110px;
-  width: 1px;
-  height: 535px;
-  background: #686868;
+    font-size: 1.2rem;
+    padding-right: 30rem;
+    padding-left: 5.5rem;
+    margin-top: 0;
 }
 
 .about-main {
-	width: 700px;
-	padding: 0 25px 0 15px;
-	height: 250px;
-	position: relative;
-	padding-bottom: 100px;
-	font-size: 20px;
+    color: #d7cf9d;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+	width: 45rem;
 }
 
 .about-main h2 {
-	display: flex;
+    display: flex;
     align-items: center;
-    width: 100%;
-    min-height: 41px;
-    padding: 0;
-    border-bottom: 1px solid #686868;
-	margin: 5px;
-	margin-top: 50px;
-	font-size: 20px;
+    height: 2.3rem;
+    border-bottom: 0.1rem solid #686868;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 0;
 }
 
 .about-row {
     display: flex;
     align-items: center;
-    width: 100%;
-    min-height: 41px;
-    padding: 0;
-    border-bottom: 1px solid #686868;
-	margin: 5px;
+    height: 2.6rem;
+    border-bottom: 0.1rem solid #686868;
+    margin-left: 0.5rem;
+	gap: 1rem;
 }
 
-.about-label {
-    color: #d7cf9d;
-    white-space: nowrap;
-}
-
-.about-text {
-    margin-left: 8px;
-    color: #dddddd;
-}
-
-body {
-	color: #CDCBC3;
-	background-color: #1B1D1C;
+.about-main h2::before {
+	content: "";
+	position: absolute;
+	width: 0.1rem;
+	height: 33.4rem;
+	left: 46.2rem;
+	top: 4.2rem;
+	border-left: 0.1rem solid #686868;
 }

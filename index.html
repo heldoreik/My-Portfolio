@@ -3,209 +3,233 @@
 	<head>
 		<title>My Portfolio</title>
 		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js" defer></script>
 	</head>
 
 	<body>
+		<div class="scale-wrap">
+			<header>	
+				<nav class="main-nav">
+					<a href="index.html">Home</a>
+					<a href="pages/en/MoreAboutMe.html">About me</a>
+					<a href="pages/en/myskills.html">Skills</a>
+					<a href="pages/en/viewallprojects.html">Projects</a>
+					<a href="pages/en/Education.html">Education</a>
+					<a href="pages/en/Experience.html">Experience</a>
+					<a href="pages/en/Experience.html">Certificates</a>
+					<a href="pages/en/contactme.html">Contact me</a>
+				</nav>
 
-		<header>	
-			<nav class="main-nav">
-				<a href="index.html">Home</a>
-				<a href="pages/en/MoreAboutMe.html">About me</a>
-				<a href="pages/en/myskills.html">Skills</a>
-				<a href="pages/en/viewallprojects.html">Projects</a>
-				<a href="pages/en/Education.html">Education</a>
-				<a href="pages/en/Experience.html">Experience</a>
-				<a href="pages/en/Experience.html">Certificates</a>
-				<a href="pages/en/contactme.html">Contact me</a>
-			</nav>
+				<nav class="data-nav">
+					<div class="language-nav">
+						<a class="ru-nav" href="pages/ru/index.html">RU</a>
+						<p>/</p>
+						<a class="en-nav active" href="index.html">EN</a>
+					</div>
 
-			<nav class="data-nav">
-				 <div class="language-nav">
-			        <a class="ru-nav" href="pages/ru/index.html">RU</a>
-			        <p>/</p>
-			        <a class="en-nav active" href="index.html">EN</a>
-			    </div>
+					<p>Fri Jun 21 18:38:00 UTC 2024</p>
+				</nav>
+			</header>
 
-				<p>Fri Jun 21 18:38:00 UTC 2024</p>
-			</nav>
-		</header>
+			<h1>[0] ~/portfolio/en/index.html</h1>
 
-		<h1>~/portfolio/en/index.html</h1>
+			<main>
+				<section class="hello-main">
+					<h2 class="alexander-main">Alexander</h2>
+						<p class="security-main">Information Security</p>
+						<p class="alittle-main">I learn security by understanding how systems fail-and documenting what i find.</p>
+				</section>
 
-		<main>
-			<section class="hello-main">
-				<h2 class="alexander-main">Alexander</h2>
-					<p class="security-main">Information Security</p>
-					<p class="alittle-main">I learn security by understanding how systems fail-and documenting what i find.</p>
+				<section class="about-main">
+					<h2>About me</h2>
+						<div class="about-row">
+							<span class="about-label">WHO I AM</span>
+							<span class="about-text">- student, Linux user</span>
+						</div>
+
+						<div class="about-row">
+							<span class="about-label">MUSIC</span>
+							<span class="about-text">- grunge, alternative rock</span>
+						</div>
+
+						<div class="about-row">
+							<span class="about-label">BOOKS</span>
+							<span class="about-text">- F. Dostoevsky, A. Griboyedov</span>
+						</div>
+
+						<div class="about-row">
+							<span class="about-label">MOVIES &amp; SERIES</span>
+							<span class="about-text">- Rick and Morty, Landman, True detective</span>
+						</div>
+
+						<div class="about-row">
+							<span class="about-label">GAMES</span>
+							<span class="about-text">- Just cause 2, Cuphead, Dota 2, Rimworld</span>
+						</div>
+
+						<div class="about-row">
+							<span class="about-label">LEARNING</span>
+							<span class="about-text">- how to write websites</span>
+						</div>
+
+						<div class="about-row">
+							<span class="about-label">WHAT I DO LIKE</span>
+							<span class="about-text">- swag &amp; chill</span>
+						</div>
+				</section>
+			</main>
+
+			<section class="skills-main">
+				<h2 id="skills"> <a href="pages/en/MySkills.html">[1] skills.conf</a></h2>
+				<p class="bottomlineskills"></p>
+
+					<article>
+						<h3>Programming</h3>
+							<ul>
+								<li>Bash</li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+							</ul>
+					</article>
+
+					<article>
+						<h3>Security</h3>
+							<ul>
+								<li>Linux Hardening</li>
+								<li>Network Security</li>
+								<li>SSH</li>
+								<li>UFW</li>
+							</ul>
+					</article>
+
+					<article>
+						<h3>Tools</h3>
+							<ul>
+								<li>Git</li>
+								<li>Linux</li>
+								<li>Wireshark</li>
+								<li>Burp Suite</li>
+							</ul>
+					</article>
 			</section>
 
-			<section class="about-main">
-				<h2>About me</h2>
-					<div class="about-row">
-						<span class="about-label">WHO I AM</span>
-						<span class="about-text">- student, Linux user</span>
-					</div>
+			<section class="projects-main">
+				<h2 id="projects"> <a href="pages/en/ViewAllProjects.html">[2] projects/</a></h2>
+					<p>Some of the projects I've worked on. More on <a href="https://github.com/heldoreik">GitHub</a></p>
+					<a href="pages/ViewAllProjects.html">View all projects</a>
 
-					<div class="about-row">
-						<span class="about-label">MUSIC</span>
-						<span class="about-text">- grunge, alternative rock</span>
-					</div>
+					<article>
+						<h3>Fortis</h3>
+							<p>A Bash-based Linux server hardening project.</p>
+							<ul>
+								<li>Bash</li>
+								<li>Linux hardening</li>
+								<li>SSH</li>
+								<li>UFW</li>
+							</ul>
+							<a href="projects/Fortis.html">View project</a>
+					</article>
 
-					<div class="about-row">
-						<span class="about-label">BOOKS</span>
-						<span class="about-text">- F. Dostoevsky, A. Griboyedov</span>
-					</div>
-
-					<div class="about-row">
-						<span class="about-label">MOVIES &amp; SERIES</span>
-						<span class="about-text">- Rick and Morty, Landman, True detective</span>
-					</div>
-
-					<div class="about-row">
-						<span class="about-label">GAMES</span>
-						<span class="about-text">- Just cause 2, Cuphead, Dota 2, Rimworld</span>
-					</div>
-
-					<div class="about-row">
-						<span class="about-label">LEARNING</span>
-						<span class="about-text">- how to write websites</span>
-					</div>
-
-					<div class="about-row">
-						<span class="about-label">WHAT I DO LIKE</span>
-						<span class="about-text">- swag &amp; chill</span>
-					</div>
+					<article>
+						<h3>Portfolio Website</h3>
+							<p>My personal website built from scratch using HTML, CSS and JavaScript</p>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+							</ul>
+							<a href="projects/PortfolioWebsite.html">View project</a>
+					</article>
 			</section>
-		</main>
 
-		<section>
-			<h2 id="skills"> <a href="pages/MySkills.html">03. My Skills</a></h2>
+			<section class="education-main">
+				<h2 id="education">[3] Education.log</h2>
+				<p class="rightline"></p>
 
-				<article>
-					<h3>Programming</h3>
-						<ul>
-							<li>Bash</li>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>JavaScript</li>
-						</ul>
+					<article>
+						<h3><a href="pages/Education.html">Education</a></h3>
+							<p>
+								0000-0000<br>
+								where<br>
+								lalala<br>
+								lalala<br>
+							</p>
+					</article>
+			</section>
+
+			<section>
+				<h2>[4] Experience.log</h2>
+
+					<article>
+						<h3><a href="pages/Experience.html">Experience</a></h3>
+							<p>
+								0000-0000<br>
+								lalala<br>
+								lalalala<br>
+							</p>
+					</article>
+			</section>
+
+			<section>
+				<h2 id="certificates"><a href="pages/Certificates.html"> 06. Certificates & Achievement</a></h2>
+					<article>
+						<h3>IELTS</h3>
+							<p>lalala</p>
+					</article>
+
+					<article>
+						<h3>CTF</h3>
+							<p>lalalala</p>
+					</article>
+
+					<article>
+						<h3>TryHackMe</h3>
+							<p>lalala</p>
+					</article>
+			</section>
+
+
+			<section>
+				<h2 id="contact">07. My Contacts</h2>
+
+					<article>
+						<h3>Email</h3>
+							<p>123@gmail.com</p>
+					</article>
+
+					<article>
+						<h3>Telegram</h3>
+							<p>@123</p>
+					</article>
+
+					<article>
+						<h3>GitHub</h3>
+						<p> <a href="https://github.com/heldoreik">github.com/heldoreik</a></p>
+					</article>
+			</section>
+
+			<section class="bottom-main">
+				<article class="bottom-normal">
+					<p>Saved</p>
 				</article>
+				<article class="bottomall-main">
+					<article class="bottomalex-main">
+						<p>| alexander@localhost |</p>
+					</article>
 
-				<article>
-					<h3>Security</h3>
-						<ul>
-							<li>Linux Hardening</li>
-							<li>Network Security</li>
-							<li>SSH</li>
-							<li>UFW</li>
-						</ul>
+					<article class="info-bottom">
+						<p>6 panes |</p>
+						<p>updated 2026-09-29</p>
+						<p>| UTC+05</p>
+					</article>
 				</article>
+			</section>
 
-				<article>
-					<h3>Tools</h3>
-						<ul>
-							<li>Git</li>
-							<li>Linux</li>
-							<li>Wireshark</li>
-							<li>Burp Suite</li>
-						</ul>
-				</article>
-		</section>
-
-		<section>
-			<h2 id="projects"> <a href="pages/ViewAllProjects.html">04. My Projects</a></h2>
-				<p>Some of the projects I've worked on. More on <a href="https://github.com/heldoreik">GitHub</a></p>
-				<a href="pages/ViewAllProjects.html">View all projects</a>
-
-				<article>
-					<h3>Fortis</h3>
-						<p>A Bash-based Linux server hardening project.</p>
-						<ul>
-							<li>Bash</li>
-							<li>Linux hardening</li>
-							<li>SSH</li>
-							<li>UFW</li>
-						</ul>
-						<a href="projects/Fortis.html">View project</a>
-				</article>
-
-				<article>
-					<h3>Portfolio Website</h3>
-						<p>My personal website built from scratch using HTML, CSS and JavaScript</p>
-						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>JavaScript</li>
-						</ul>
-						<a href="projects/PortfolioWebsite.html">View project</a>
-				</article>
-		</section>
-
-		<section>
-			<h2 id="education">05. Education & Experience</h2>
-
-				<article>
-					<h3><a href="pages/Education.html">Education</a></h3>
-						<p>
-							0000-0000<br>
-							where<br>
-							lalala<br>
-							lalala<br>
-						</p>
-				</article>
-
-				<article>
-					<h3><a href="pages/Experience.html">Experience</a></h3>
-						<p>
-							0000-0000<br>
-							lalala<br>
-							lalalala<br>
-						</p>
-				</article>
-		</section>
-
-		<section>
-			<h2 id="certificates"><a href="pages/Certificates.html"> 06. Certificates & Achievement</a></h2>
-				<article>
-					<h3>IELTS</h3>
-						<p>lalala</p>
-				</article>
-
-				<article>
-					<h3>CTF</h3>
-						<p>lalalala</p>
-				</article>
-
-				<article>
-					<h3>TryHackMe</h3>
-						<p>lalala</p>
-				</article>
-		</section>
-
-
-		<section>
-			<h2 id="contact">07. My Contacts</h2>
-
-				<article>
-					<h3>Email</h3>
-						<p>123@gmail.com</p>
-				</article>
-
-				<article>
-					<h3>Telegram</h3>
-						<p>@123</p>
-				</article>
-
-				<article>
-					<h3>GitHub</h3>
-					<p> <a href="https://github.com/heldoreik">github.com/heldoreik</a></p>
-				</article>
-		</section>
-
-
-		<footer>
-			<h2>Motivated by</h2>
-			<p>Chopokompic</p>
-		</footer>
+			<footer>
+				<h2>Motivated by</h2>
+				<p>Chopokompic</p>
+			</footer>
+		</div>
 	</body>
 </html>
