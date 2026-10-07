@@ -268,7 +268,8 @@ main {
 
 .education-more h3,
 .experience-more h3,
-.projects-more h3 {
+.projects-more h3,
+.skills-more h3 {
     margin: 0;
     margin-top: 1rem;
     color: var(--accent);
@@ -277,47 +278,18 @@ main {
 
 .education-more,
 .experience-more,
-.projects-more {
+.projects-more,
+.skills-more {
     padding-left: 1rem;   
 }
 
 .education-more p,
 .experience-more p,
-.projects-more p {
+.projects-more p,
+.skills-more p {
     font-size: clamp(1.05rem, 1.6vw, 1.25rem);
     margin: 0;
     padding-left: 1rem;
-}
-
-.skills-more {
-    display: grid;
-    grid-template-rows: auto auto;
-}
-
-.skillsone-grid {
-    grid-column: 1;
-}
-
-.skillstwo-grid {
-    grid-column: 2;
-}
-
-.skills-more h3 {
-    padding: 0 2.4rem;
-    margin: 0;
-    color: var(--accent);
-    font-size: 1.3rem;
-}
-
-.skills-more {
-    display: flex;
-    justify-content: center;
-}
-
-.skills-more ul {
-    font-size: clamp(1.05rem, 1.6vw, 1.25rem);
-    margin: 0;
-    margin-left: 1rem;
 }
 
 /* tablet */
