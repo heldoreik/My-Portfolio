@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <link rel="stylesheet" href="../../css//doesntwork/style.css">
-        <h1 class="doesntwork">It doesn't fucking work</h1>
-        <p>en/myskills</p>
-    </head>
+		<title>Skills</title>
+		<link rel="stylesheet" href="../../css/skills.css">
+		<script src="js/script.js" defer></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Ubuntu+Mono&display=swap">
+	</head>
     <body>
+        <div class="scale-wrap">
+            <header>	
+				<nav class="main-nav">
+					<a href="../../index.html">Home</a>
+					<a class="skills active" href="myskills.html">Skills</a>
+					<a href="viewallprojects.html">Projects</a>
+					<a href="Education.html">Education</a>
+					<a href="Experience.html">Experience</a>
+					<a href="Experience.html">Certificates</a>
+					<a href="contactme.html">Contact me</a>
+				</nav>
 
+				<nav class="data-nav">
+					<div class="language-nav">
+						<a class="ru-nav" href="pages/ru/index.html">RU</a>
+						<p>/</p>
+						<a class="en-nav active" href="index.html">EN</a>
+					</div>
+
+					<p>Fri Jun 21 18:38:00 UTC 2024</p>
+				</nav>
+			</header>
+
+            <h1>[0] ~/portfolio/en/skills.html</h1>
+
+            <main>
+                <h2 class="skills-main">Skills</h2>
+                <p class="alittle-main">36 skills in 6 areas, from the system level up to the browser.</p>
+                <article class="sort-main">
+                    <article class="sort-skills">
+                        <p>all</p>
+                        <p>beginner</p>
+                        <p>junior</p>
+                        <p>middle</p>
+                        <p>senior</p>
+                    </article>
+					<article class="search-main">
+                    	<label for="skill-search">$ grep</label>
+						<input 
+						type="search"
+						id="skill-search"
+						placeholder="linux, css, ..."
+						autocomplete="off"
+						>
+					</article>
+                </article>
+            </main>
+        </div>
     </body>
 </html>
