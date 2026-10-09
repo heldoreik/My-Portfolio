@@ -344,6 +344,10 @@ main {
         overflow: visible;
     }
 
+    body {
+        margin: 0;
+    }
+
     header,
     h1,
     main,
