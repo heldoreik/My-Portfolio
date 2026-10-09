@@ -32,7 +32,6 @@ h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
-
 a {
     text-decoration: none;
     color: inherit;
@@ -247,6 +246,7 @@ main {
     align-items: center;
     margin-top: 0.5rem;
 }
+
 .projects-main,
 .certs-main,
 .experience-main,
@@ -272,7 +272,7 @@ main {
 .experience-more,
 .projects-more,
 .skills-more {
-    padding-left: 1rem;   
+    padding-left: 1rem;
 }
 
 .education-more p,
@@ -288,8 +288,19 @@ main {
     color: var(--hover);
 }
 
-/* tablet */
+@media (max-width: 1400px) {
+    body {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
 @media (max-width: 1100px) {
+    body {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
     .scale-wrap {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto 1fr auto auto;
@@ -314,7 +325,7 @@ main {
     .terminal {
         grid-column: 1;
         grid-row: auto;
-        border: 1px solid var(--accent); 
+        border: 1px solid var(--accent);
         border-top: 1px solid var(--accent);
         min-height: clamp(180px, 30vh, 280px);
         max-height: 40vh;
@@ -335,17 +346,18 @@ main {
     }
 }
 
-/* mobile */
 @media (max-width: 700px) {
+    body {
+        margin: 0;
+    }
+
     .scale-wrap {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         height: auto;
         overflow: visible;
-    }
-
-    body {
-        margin: 0;
+        padding: 4px;
+        gap: 4px;
     }
 
     header,
@@ -400,6 +412,50 @@ main {
         max-height: 38vh;
         margin: 8px;
     }
+}
 
-    
+@media (max-width: 400px) {
+    .scale-wrap {
+        padding: 2px;
+        gap: 3px;
+    }
+
+    header {
+        font-size: 0.8rem;
+    }
+
+    .main-nav a {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .alexander-main {
+        font-size: clamp(1.4rem, 8vw, 2rem);
+    }
+
+    .security-main {
+        font-size: clamp(1rem, 5vw, 1.4rem);
+    }
+
+    .alittle-main {
+        font-size: 0.9rem;
+    }
+
+    .about-main {
+        font-size: 0.95rem;
+    }
+
+    .education-more p,
+    .experience-more p,
+    .projects-more p,
+    .skills-more p {
+        font-size: 0.95rem;
+        padding-left: 0.5rem;
+    }
+
+    .education-more h3,
+    .experience-more h3,
+    .projects-more h3,
+    .skills-more h3 {
+        font-size: 1.1rem;
+    }
 }
