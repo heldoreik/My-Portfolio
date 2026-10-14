@@ -1,3 +1,4 @@
+// clocks
 const clock = document.getElementById("clock");
 
 function updateclock () {

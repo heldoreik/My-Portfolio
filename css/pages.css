@@ -29,6 +29,23 @@ body {
     font-family: "IBM Plex Mono", "Liberation Mono", monospace;
 }
 
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--panel);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--line);
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
 h2,
 h3,
 h4,
