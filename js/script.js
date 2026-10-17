@@ -26,6 +26,7 @@ setInterval(updateClock, 1000);
 const terminalLine = document.getElementById("terminal-line");
 const terminalOutput = document.getElementById("terminal-output");
 const terminalInput = document.getElementById("terminal-input");
+const terminalBody = document.querySelector(".terminal-body");
 
 let isTyping = false;
 
@@ -33,9 +34,9 @@ const pages = {
     home: "index.html",
     skills: "pages/en/skills.html",
     projects: "pages/en/projects.html",
-    education: "pages/en/education.html",
-    experience: "pages/en/experience.html",
-    certificates: "pages/en/certificates.html",
+    education: "pages/en/Education.html",
+    experience: "pages/en/Experience.html",
+    certificates: "pages/en/Certificates.html",
     contactme: "pages/en/contactme.html"
 };
 
@@ -89,7 +90,11 @@ function typeCommand(command, index = 0) {
     }, 45);
 }
 
-if (terminalLine && terminalOutput && terminalInput) {
+if (terminalLine && terminalOutput && terminalInput && terminalBody) {
+    terminalBody.addEventListener("click", function () {
+        terminalInput.focus();
+    });
+
     terminalLine.addEventListener("submit", function (event) {
         event.preventDefault();
 

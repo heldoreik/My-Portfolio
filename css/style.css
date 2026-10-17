@@ -342,7 +342,8 @@ main {
 .education-more h3,
 .experience-more h3,
 .projects-more h3,
-.skills-more h3 {
+.skills-more h3,
+.certs-more h3 {
     margin: 0;
     margin-top: 1rem;
     color: var(--accent);
@@ -352,14 +353,16 @@ main {
 .education-more,
 .experience-more,
 .projects-more,
-.skills-more {
+.skills-more,
+.certs-more {
     padding-left: 1rem;
 }
 
 .education-more p,
 .experience-more p,
 .projects-more p,
-.skills-more p {
+.skills-more p,
+.certs-more p {
     font-size: clamp(1.05rem, 1.6vw, 1.25rem);
     margin: 0;
     padding-left: 1rem;
