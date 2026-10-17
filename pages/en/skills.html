@@ -32,17 +32,20 @@
 
             <h1>[0] ~/portfolio/en/skills.html</h1>
 
-            <main>
-                <h2 class="skills-main">Skills</h2>
-                <p class="alittle-main">36 skills in 6 areas, from the system level up to the browser.</p>
-                <article class="sort-main">
-                    <article class="sort-skills">
-                        <p>all</p>
-                        <p>beginner</p>
-                        <p>junior</p>
-                        <p>middle</p>
-                        <p>senior</p>
+            <div class="search-layout skills-search-layout">
+                <main>
+                    <h2 class="skills-main">Skills</h2>
+                    <p class="alittle-main">36 skills in 6 areas, from the system level up to the browser.</p>
+                    <article class="sort-main">
+                        <article class="sort-skills">
+                            <p>beginner</p>
+                            <p>junior</p>
+                            <p>middle</p>
+                            <p>senior</p>
+                        </article>
                     </article>
+                </main>
+                <article class="search-container">
 					<article class="search-main">
                     	<label for="skill-search">$ grep</label>
 						<input 
@@ -50,10 +53,12 @@
 						id="skill-search"
 						placeholder="linux, css, ..."
 						autocomplete="off"
+						spellcheck="false"
+						autofocus
 						>
 					</article>
                 </article>
-            </main>
+            </div>
         </div>
     </body>
 </html>

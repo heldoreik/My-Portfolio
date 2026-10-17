@@ -32,10 +32,12 @@
 
             <h1>[0] ~/portfolio/en/projects.html</h1>
 
-            <main>
-                <h2 class="projects-main">Projects</h2>
-                <p class="alittle-main">Things I build to practice security and web development.</p>
-                <article class="sort-main">
+            <div class="search-layout projects-search-layout">
+                <main>
+                    <h2 class="projects-main">Projects</h2>
+                    <p class="alittle-main">Things I build to practice security and web development.</p>
+                </main>
+                <article class="search-container">
 					<article class="search-main">
                     	<label for="projects-search">$ grep</label>
 						<input 
@@ -43,10 +45,12 @@
 						id="projects-search"
 						placeholder="bash, css, enabled"
 						autocomplete="off"
+						spellcheck="false"
+						autofocus
 						>
 					</article>
                 </article>
-            </main>
+            </div>
         </div>
     </body>
 </html>

@@ -32,10 +32,12 @@
 
             <h1>[0] ~/portfolio/en/certificates.html</h1>
 
-            <main>
-                <h2 class="certificates-main">Certificates</h2>
-                <p class="alittle-main">Courses I have completed. Click a certificate to preview it.</p>
-                <article class="sort-main">
+            <div class="search-layout">
+                <main>
+                    <h2 class="certificates-main">Certificates</h2>
+                    <p class="alittle-main">Courses I have completed. Click a certificate to preview it.</p>
+                </main>
+                <article class="search-container">
 					<article class="search-main">
                     	<label for="certificates-search">$ grep</label>
 						<input 
@@ -43,10 +45,12 @@
 						id="certificates-search"
 						placeholder="linux, ssh, 2025"
 						autocomplete="off"
+						spellcheck="false"
+						autofocus
 						>
 					</article>
                 </article>
-            </main>
+            </div>
         </div>
     </body>
 </html>

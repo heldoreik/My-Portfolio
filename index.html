@@ -12,12 +12,12 @@
 			<header>	
 				<nav class="main-nav">
 					<a href="index.html">Home</a>
-					<a href="pages/en/skills.html">Skills</a>
-					<a href="pages/en/projects.html">Projects</a>
-					<a href="pages/en/education.html">Education</a>
-					<a href="pages/en/experience.html">Experience</a>
-					<a href="pages/en/certificates.html">Certificates</a>
-					<a href="pages/en/contactme.html">Contact me</a>
+					<a href="pages/en/skills.html" data-terminal-command="cd portfolio/en/skills">Skills</a>
+					<a href="pages/en/projects.html" data-terminal-command="cd portfolio/en/projects">Projects</a>
+					<a href="pages/en/education.html" data-terminal-command="cd portfolio/en/education">Education</a>
+					<a href="pages/en/experience.html" data-terminal-command="cd portfolio/en/experience">Experience</a>
+					<a href="pages/en/certificates.html" data-terminal-command="cd portfolio/en/certificates">Certificates</a>
+					<a href="pages/en/contactme.html" data-terminal-command="cd portfolio/en/contactme">Contact me</a>
 				</nav>
 
 				<nav class="data-nav">
@@ -82,14 +82,20 @@
 					<div class="terminal">
 						<div class="terminal-header">alexander@localhost:~</div>
 						<div class="terminal-body">
-							<div class="teminal-line">
-								<span class="terminal-promt">alexander@localhost:~$</span>
-								<span class="terminal-input">help</span>
-							</div>
+							<div class="terminal-output" id="terminal-output"></div>
 
-							<div class="teminal-output">
-								<p>help, cd, man</p>
-							</div>
+							<form class="terminal-line" id="terminal-line">
+								<label class="terminal-promt" for="terminal-input">
+									alexander@localhost:~$
+								</label>
+								<input
+									class="terminal-input"
+									id="terminal-input"
+									type="text"
+									autocomplete="off"
+									spellcheck="false"
+								>
+							</form>
 					</div>
     			</div>
 			</main>

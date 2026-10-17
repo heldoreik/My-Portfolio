@@ -21,8 +21,7 @@ body {
 }
 
 body {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-inline: clamp(10rem, 10vw, 20rem);
     color: var(--text);
     background: var(--bg);
     font-family: "IBM Plex Mono", "Liberation Mono", monospace;
@@ -149,9 +148,7 @@ main {
     gap: 0;
     font-size: 0.9rem;
     border: 2px solid var(--hover);
-    border-top: none;
     overflow: hidden;
-    margin-top: -0.5rem;
 }
 
 .hello-main,
@@ -262,14 +259,40 @@ main {
 .terminal-promt {
     color: var(--accent);
     flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .terminal-input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font: inherit;
+    caret-color: var(--accent);
     color: var(--text);
+}
+
+.terminal-output {
+    white-space: pre-wrap;
 }
 
 .terminal-output p {
     margin: 0;
+}
+
+.terminal-history-line {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.terminal-prompt {
+    color: var(--accent);
+}
+
+.terminal-result {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
 }
 
 .thin1 h2,
