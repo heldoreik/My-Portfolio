@@ -1,4 +1,4 @@
-const educationList = document.getElementById('education-list');
+﻿const educationList = document.getElementById('education-list');
 
 function createEducationEntry(education) {
     const entry = document.createElement('article');
@@ -35,7 +35,7 @@ function createEducationEntry(education) {
 
 async function loadEducation() {
     try {
-        const response = await fetch('http://localhost:3000/api/education');
+        const response = await fetch('http://127.0.0.1:8081/api/education');
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
@@ -64,3 +64,4 @@ async function loadEducation() {
 }
 
 loadEducation();
+

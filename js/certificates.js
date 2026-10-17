@@ -1,4 +1,4 @@
-const certificatesList = document.getElementById('certificates-list');
+﻿const certificatesList = document.getElementById('certificates-list');
 const certificatesSearch = document.getElementById('certificates-search');
 const certificatePreviewDialog = document.querySelector('.certificate-preview-dialog');
 const certificatePreviewImage = certificatePreviewDialog.querySelector('img');
@@ -142,7 +142,7 @@ certificatesSearch.addEventListener('input', renderCertificates);
 
 async function loadCertificates() {
     try {
-        const response = await fetch('http://localhost:3000/api/certificates');
+        const response = await fetch('http://127.0.0.1:8081/api/certificates');
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
@@ -176,3 +176,4 @@ async function loadCertificates() {
 }
 
 loadCertificates();
+

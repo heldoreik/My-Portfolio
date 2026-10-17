@@ -1,4 +1,4 @@
-const skillsList = document.getElementById('skills-list');
+﻿const skillsList = document.getElementById('skills-list');
 const skillsSummary = document.getElementById('skills-summary');
 const skillsSearch = document.getElementById('skill-search');
 const levelButtons = document.querySelectorAll('.sort-skills [data-level]');
@@ -124,7 +124,7 @@ skillsSearch.addEventListener('input', renderSkills);
 
 async function loadSkills() {
     try {
-        const response = await fetch('http://localhost:3000/api/skills');
+        const response = await fetch('http://127.0.0.1:8081/api/skills');
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
@@ -152,3 +152,4 @@ async function loadSkills() {
 }
 
 loadSkills();
+

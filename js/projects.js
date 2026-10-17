@@ -1,4 +1,4 @@
-const projectsList = document.getElementById('projects-list');
+﻿const projectsList = document.getElementById('projects-list');
 const projectsSearch = document.getElementById('projects-search');
 const nameCollator = new Intl.Collator(undefined, { sensitivity: 'base' });
 let projects = [];
@@ -105,7 +105,7 @@ projectsSearch.addEventListener('input', renderProjects);
 
 async function loadProjects() {
     try {
-        const response = await fetch('http://localhost:3000/api/projects');
+        const response = await fetch('http://127.0.0.1:8081/api/projects');
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);

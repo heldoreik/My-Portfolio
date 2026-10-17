@@ -1,4 +1,4 @@
-const experienceList = document.getElementById('experience-list');
+﻿const experienceList = document.getElementById('experience-list');
 
 function createExperienceEntry(experience) {
     const entry = document.createElement('article');
@@ -44,7 +44,7 @@ function createExperienceEntry(experience) {
 
 async function loadExperience() {
     try {
-        const response = await fetch('http://localhost:3000/api/experience');
+        const response = await fetch('http://127.0.0.1:8081/api/experience');
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
@@ -74,3 +74,4 @@ async function loadExperience() {
 }
 
 loadExperience();
+
