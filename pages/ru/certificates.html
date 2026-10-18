@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Сертификаты</title>
+		<link rel="stylesheet" href="../../css/pages.css">
+		<script src="../../js/script.js" defer></script>
+		<script src="../../js/certificates.js" defer></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Ubuntu+Mono&display=swap">
+	</head>
+    <body>
+        <div class="scale-wrap">
+            <header>	
+				<nav class="main-nav">
+					<a href="index.html">Главная</a>
+					<a href="skills.html">Навыки</a>
+					<a href="projects.html">Проекты</a>
+					<a href="education.html">Образование</a>
+					<a href="experience.html">Опыт</a>
+					<a class="certificates active" href="certificates.html">Сертификаты</a>
+					<a href="contactme.html">Контакты</a>
+				</nav>
+
+				<nav class="data-nav">
+					<div class="language-nav">
+						<a class="ru-nav active" href="certificates.html">RU</a>
+						<p>/</p>
+						<a class="en-nav" href="../en/Certificates.html">EN</a>
+					</div>
+
+					<p id="clock">Fri Jun 21 18:38:00 UTC 2024</p>
+				</nav>
+			</header>
+
+            <h1>[0] ~/portfolio/ru/certificates.html</h1>
+
+            <div class="search-layout">
+                <main>
+                    <h2 class="certificates-main">Сертификаты</h2>
+                    <p class="alittle-main">Курсы, которые я прошёл.</p>
+                </main>
+                <article class="search-container">
+					<article class="search-main">
+                    	<label for="certificates-search">$ grep</label>
+						<input 
+						type="search"
+						id="certificates-search"
+						placeholder="linux, ssh, 2025..."
+						autocomplete="off"
+						spellcheck="false"
+						>
+					</article>
+                </article>
+            </div>
+			<section id="certificates-list" aria-label="Сертификаты"></section>
+        </div>
+		<dialog class="certificate-preview-dialog" aria-label="Предпросмотр сертификата">
+			<form method="dialog">
+				<button class="certificate-preview-close" aria-label="Закрыть предпросмотр">Закрыть</button>
+			</form>
+			<img alt="">
+		</dialog>
+    </body>
+</html>

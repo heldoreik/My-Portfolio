@@ -30,15 +30,29 @@ const terminalBody = document.querySelector(".terminal-body");
 
 let isTyping = false;
 
-const pages = {
-    home: "index.html",
-    skills: "pages/en/skills.html",
-    projects: "pages/en/projects.html",
-    education: "pages/en/Education.html",
-    experience: "pages/en/Experience.html",
-    certificates: "pages/en/Certificates.html",
-    contactme: "pages/en/contactme.html"
-};
+const isRussianHomepage = window.location.pathname
+    .toLowerCase()
+    .endsWith("/pages/ru/index.html");
+
+const pages = isRussianHomepage
+    ? {
+        home: "index.html",
+        skills: "skills.html",
+        projects: "projects.html",
+        education: "education.html",
+        experience: "experience.html",
+        certificates: "certificates.html",
+        contactme: "contactme.html"
+    }
+    : {
+        home: "index.html",
+        skills: "pages/en/skills.html",
+        projects: "pages/en/projects.html",
+        education: "pages/en/Education.html",
+        experience: "pages/en/Experience.html",
+        certificates: "pages/en/Certificates.html",
+        contactme: "pages/en/contactme.html"
+    };
 
 function addHistory(command) {
     const commandLine = document.createElement("div");
@@ -132,13 +146,13 @@ if (terminalLine && terminalOutput && terminalInput && terminalBody) {
             case "cd": {
                 if (!argument) {
                     addHistoryOutput(
-                        "Usage: cd portfolio/en/<page>"
+                        `Usage: cd portfolio/${isRussianHomepage ? "ru" : "en"}/<page>`
                     );
                     break;
                 }
 
                 const pageName = argument
-                    .replace(/^portfolio\/en\//i, "")
+                    .replace(/^portfolio\/(?:en|ru)\//i, "")
                     .replace(/\.html$/i, "")
                     .toLowerCase();
 

@@ -122,6 +122,7 @@ header {
 
 .ru-nav.active,
 .en-nav.active,
+.home.active,
 .skills.active {
     background-color: var(--hover);
     color: var(--bg);
