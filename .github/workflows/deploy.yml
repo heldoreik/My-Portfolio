@@ -24,7 +24,7 @@ jobs:
             cd /home/admin/My-Portfolio
             git pull --ff-only origin master
             sudo docker compose up -d --build
-            sudo cp -a index.html css images js pages /var/www/kragua.work/
+            sudo cp -a index.html favicon.png css images js pages /var/www/kragua.work/
             sudo chown -R root:root /var/www/kragua.work
             sudo find /var/www/kragua.work -type d -exec chmod 755 {} \;
             sudo find /var/www/kragua.work -type f -exec chmod 644 {} \;
