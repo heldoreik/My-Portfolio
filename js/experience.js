@@ -44,7 +44,7 @@ function createExperienceEntry(experience) {
 
 async function loadExperience() {
     try {
-        const response = await fetch('http://127.0.0.1:8081/api/experience');
+        const response = await fetch('/api/experience');
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);

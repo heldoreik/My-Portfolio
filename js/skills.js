@@ -124,7 +124,7 @@ skillsSearch.addEventListener('input', renderSkills);
 
 async function loadSkills() {
     try {
-        const response = await fetch('http://127.0.0.1:8081/api/skills');
+        const response = await fetch('/api/skills');
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);

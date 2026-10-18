@@ -142,7 +142,7 @@ certificatesSearch.addEventListener('input', renderCertificates);
 
 async function loadCertificates() {
     try {
-        const response = await fetch('http://127.0.0.1:8081/api/certificates');
+        const response = await fetch('/api/certificates');
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
