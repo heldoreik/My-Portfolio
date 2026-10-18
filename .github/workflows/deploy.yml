@@ -1,0 +1,33 @@
+
+name: Deploy portfolio
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy over SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: 1502
+          script_stop: true
+          script: |
+            set -e
+            cd /home/admin/My-Portfolio
+            git pull --ff-only origin master
+            sudo docker compose up -d --build
+            sudo cp -a index.html css images js pages /var/www/kragua.work/
+            sudo chown -R root:root /var/www/kragua.work
+            sudo find /var/www/kragua.work -type d -exec chmod 755 {} \;
+            sudo find /var/www/kragua.work -type f -exec chmod 644 {} \;
+            sudo nginx -t
+            curl -fsS https://kragua.work/api/projects > /dev/null
