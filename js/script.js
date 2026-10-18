@@ -29,6 +29,7 @@ const terminalInput = document.getElementById("terminal-input");
 const terminalBody = document.querySelector(".terminal-body");
 
 let isTyping = false;
+let focusTerminalAfterSubmit = true;
 
 const isRussianHomepage = window.location.pathname
     .toLowerCase()
@@ -80,15 +81,18 @@ function addHistoryOutput(message) {
     terminalOutput.scrollTop = terminalOutput.scrollHeight;
 }
 
-function typeCommand(command, index = 0) {
+function typeCommand(command, index = 0, focusInput = true) {
     if (!terminalInput || !terminalLine) return;
 
     if (index === 0) {
         if (isTyping) return;
 
         isTyping = true;
+        focusTerminalAfterSubmit = focusInput;
         terminalInput.value = "";
-        terminalInput.focus();
+        if (focusInput) {
+            terminalInput.focus();
+        }
     }
 
     if (index >= command.length) {
@@ -100,7 +104,7 @@ function typeCommand(command, index = 0) {
     terminalInput.value += command[index];
 
     setTimeout(function () {
-        typeCommand(command, index + 1);
+        typeCommand(command, index + 1, focusInput);
     }, 45);
 }
 
@@ -179,7 +183,10 @@ if (terminalLine && terminalOutput && terminalInput && terminalBody) {
                 );
         }
 
-        terminalInput.focus();
+        if (focusTerminalAfterSubmit) {
+            terminalInput.focus();
+        }
+        focusTerminalAfterSubmit = true;
     });
 }
 
@@ -201,6 +208,6 @@ terminalLinks.forEach(function (link) {
 
         if (!command) return;
 
-        typeCommand(command);
+        typeCommand(command, 0, false);
     });
 });
